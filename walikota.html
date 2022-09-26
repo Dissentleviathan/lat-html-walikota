@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFILE</title>
+    <link rel="shortcut icon" href="img/oni.ico" type="image/x-icon">
+</head>
+<style>
+    h2 {text-align: center;}
+    td {text-align: center;}
+</style>
+<body>
+    <div>
+        <h2>Objek Wisata</h2>
+        <!--order list-->
+        <ol>
+            <li>Jembatan Ampera</li>
+            <li>Benteng Kuto Besak</li>
+            <li>Jakabaring Sport City</li>
+            <li>Mesjid Chengho</li>
+            <li>Punti Kayu</li>
+        </ol>
+        <h2>Makanan Khas</h2>
+        <ol type="1">
+            <li>Pempek</li>
+            <li>Tekwan</li>
+            <li>Model</li>
+            <li>Mie Celor</li>
+            <li>Rujak Mie</li>
+        </ol>
+        <!--unorder list-->
+        <h2>Fasilitas Kesehatan</h2>
+        <ul>
+            <li>RS. Moh. Hoesin</li>
+            <li>RS. Sriwijaya</li>
+            <li>RS. Umum</li>
+            <li>RS. Charitas</li>
+            <li>RS. Bunda</li>
+        </ul>
+        <h2>Mall</h2>
+        <ul type="square">
+            <li>Palembang Icon</li>
+            <li>Palembang Square</li>
+            <li>Palembang Trade Center</li>
+            <li>International Plaze</li>
+            <li>Opi Mall</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Daftar Walikota Palemabng</h2>
+        <!--Buat Tabel Disini-->
+        <table border="1" width = "100%--">
+            <thead>
+                <tr>
+                <th>No</th>
+                <th>Nama Walikota</th>
+                <th>Foto</th>
+                <th>Periode</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>1</td>
+                <td>H.Kholil Aziz S.H</td>
+                <td><img src="img2/100px-Kholil_Aziz.jpg" alt="Kholil Aziz"></td>
+                <td>1988 - 1993</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Drs. H.Husni, M.M.</td>
+                <td><img src="img2/100px-Drs._H._Husni,_M.M.jpg" alt="Husni"></td>
+                <td>1993 - 2003</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ir. H.Eddy Santana PutraM.T</td>
+                <td><img src="img2/100px-Eddy_Santana_Putra_Walikota_Palembang.jpg" alt="Eddy"></td>
+                <td>2003 - 2013</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>H. Romi Herton S.H, M.H</td>
+                <td><img src="img2/Romi_Herton_Walikota_Palembang.jpg" alt="Romi"></td>
+                <td>2013 - 2014</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>H. Harnojoyo, S.Sos.</td>
+                <td><img src="img2/harnojoyo.png" alt="Harnojoyo"></td>
+                <td>2014 - 2018</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div>
+        <h2>Formulir Pendaftaran Walikota Palembang</h2>
+        <form action="daftar.html" method="post">
+            <div>
+                Nama <br>
+                <input type="text" name="nama_lengkap" id="nama_lengkap" placeholder="Masukkan Nama Lengkap">
+            </div>
+            Tempat Lahir <br>
+            <input type="text" name="tempat_lahir" id="tempat_lahir" placeholder="Masukkan Tempat Lahir">
+            <div>
+                Tanggal Lahir <br>
+                <input type="date" name="tanggal_lahir" id="tanggal_lahir">
+            </div>
+            <div>
+                Jenis Kelamin <br>
+                <input type="radio" name="jk" id="jkl" value="L"> Laki-Laki
+                <input type="radio" name="jk" id="jkp" value="P"> Perempuan
+            </div>
+            <div>
+                Alamat <br>
+                <textarea cols="20" rows="2" name="alamat"
+                id="alamat"></textarea>
+            </div>
+            <div>
+                Partai Pengusung <br>
+                <select name="partai" id="partai">
+                <option value="PIM">Partai Indonesia Maju</option>
+                <option value="PISLM">Partai Indonesia Selangkah Lebih Maju</option>
+                </select>
+            </div>
+            <button type="submit">Daftar</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+</html>
